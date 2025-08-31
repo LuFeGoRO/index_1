@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjetas Animadas</title>
+  <style>
+   body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #1a1a2e;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(30deg, #6a11cb, #2575fc);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(30deg, #ff9966, #ff5e62);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+a{
+    color: aliceblue;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card h2,
+.card p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Efecto de degradado animado */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+ }
+/*Pega todo el código CSS aquí */
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="card">
+        <h2><a href="primer.html">En caso de comprar un poste</a></h2>
+    
+  </div>
+  <div class="card">
+       <h2><a href="segundocaso.html"> En caso de querer comprar un nuevo tema de luces</a></h2>
+    
+  </div>
+  <div class="card">
+    <link rel="na" href="">
+    <h2><a href="tercercaso.html"> En caso de querer comprar un nuevo tema de luces personalizadas:</a></h2>
+    
+  </div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Flujo del Desarrollo de Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .flowchart-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .flowchart-node {
+            background-color: #ffffff;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .flowchart-node:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .flowchart-node h3 {
+            margin: 0 0 10px;
+            color: #2c3e50;
+        }
+
+        .flowchart-node p {
+            margin: 0;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .flowchart-arrow {
+            width: 2px;
+            height: 50px;
+            background-color: #3498db;
+            position: relative;
+        }
+
+        .flowchart-arrow::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 10px solid #3498db;
+        }
+        .fixed-bottom-button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+a{
+    color: white;
+}
+
+/* Estilos para el botón */
+.action-button {
+  background-color: #ff5e62;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin-right: 79em;
+}
+
+.action-button:hover {
+  background-color: #ff9966;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+    </style>
+</head>
+<body>
+
+    <h1>En caso de querer comprar un nuevo tema de luces</h1>
+    <div class="flowchart-container">
+        <div class="flowchart-node">
+            
+            <p>el cliente visualiza la galería de colores. </p>
+        </div>
+        <div class="flowchart-arrow"></div>
+
+        <div class="flowchart-node">
+            
+            <p>Seleccione el tema de su agrado o necesidad.</p>
+        </div>
+        <div class="flowchart-arrow"></div>
+
+        <div class="flowchart-node">
+            
+            <p>compra la suscripción según la cantidad de postes.</p>
+        </div>
+        <div class="flowchart-arrow"></div>
+
+        <div class="flowchart-node">
+            
+            <p>realiza el pago.</p>
+        </div>
+        <div class="flowchart-arrow"></div>
+
+        <div class="flowchart-node">
+            
+            <p>adquiere el tema y lo activa remotamente desde la página.
+</p>
+        </div>
+        
+
+       
+    </div>
+     <div class="fixed-bottom-button-container">
+  <button class="action-button"><a href="index.html"><h2>REGRESAR</h2></a></button>
+</div>
+
+
+</body>
+</html>
